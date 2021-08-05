@@ -1,0 +1,117 @@
+.aboutUSSection {
+  margin: 0 auto;
+
+  .boxTitle {
+    position: relative;
+    max-width: 130px;
+    margin: 0 auto;
+
+    h2 {
+      height: 20px;
+  
+      font-size: 20px;
+      color: #F97270;
+
+      margin-bottom: 97.5px;
+    }
+
+    > .boxShadow {
+      width: 125px;
+    }
+  }
+
+  .aboutUsContainer {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .aboutUsImageContainer {
+      position: relative;
+      max-width: 385px;
+      width: 100%;
+      
+      img {
+        max-width: 385px;
+        width: 100%;
+        height: 413px;
+      }
+      
+      .backDots {
+        position: absolute;
+        top: -20px;
+        right: -25px;
+        width: 173px;
+        height: 204px;
+        background: transparent url('../../assets/back1.png') 0% 0% no-repeat padding-box;
+        color: transparent;
+        z-index: -1;
+      }
+    }
+
+    .auInformation {
+      color: #151D41;
+
+      max-width: 321.82px;
+      width: 100%;
+
+      h2 {
+        text-align: left;
+        font-size: 21px;
+        color: #151D41;
+
+        width: 203px;
+        height: 47px;
+        margin-bottom: 29.52px;
+      }
+
+      p {
+        text-align: left;
+        font-size: 18px;
+        color: #151D41;
+        margin-bottom: 29.52px;
+      }
+
+      button {
+        width: 164px;
+        height: 52px;
+        border: 0;
+
+        font-size: 11px;
+        color: #FFFFFF;
+        cursor: pointer;
+
+        background: #F97270 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .aboutUsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .aboutUSSection {
+    .aboutUsContainer {
+      .aboutUsImageContainer {
+        .backDots {
+          right: 0;
+        }
+      }
+    }
+  }
+}

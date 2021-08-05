@@ -1,0 +1,28 @@
+header {
+  height: 128px;
+  
+  background: var(--unnamed-color-f97270) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-707070);
+  background: #F97270 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  
+  opacity: 1;
+
+  > div {
+    height: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  header {
+    > div {
+      justify-content: center;
+    }
+  }
+}

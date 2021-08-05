@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px "Josefin Sans", Arial, sans-serif;
+  color: #121214;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.boxShadow {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+
+  height: 17px;
+
+  background: #F97270 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  opacity: 0.1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');

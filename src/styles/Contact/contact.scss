@@ -1,0 +1,135 @@
+.contactSection {
+  position: relative;
+  padding-top: 119px;
+  background: transparent url('../../assets/bg-effects/map-55e32ae4c19a85738ebb72d3172e3ab7.png') 50% 0% no-repeat padding-box;
+
+  .boxTitle {
+    position: relative;
+    max-width: 99px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 20px;
+      color: #F97270;
+      margin-bottom: 12px;
+    }
+
+    > .boxShadow {
+      width: 110px;
+      left: -2px;
+    }
+  }
+
+  .boxSubTitle {
+    position: relative;
+    max-width: 392px;
+    margin: 0 auto;
+
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      color: #151D41;
+    }
+
+    > .boxShadow {
+      width: 412px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 70px auto 120px;
+    max-width: 891px;
+
+    padding: 0 10px;
+
+    input {
+      width: 100%;
+      font-size: 13px;
+      color: #151D41;
+      padding: 20px 18px;
+      
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #151D41;
+      border-radius: 5px;
+    }
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      input {
+        width: 49%;
+      }
+    }
+
+    input[name="name"], > div {
+      margin-bottom: 36px;
+    }
+
+    input[name="message"] {
+      margin-bottom: 58px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 148px;
+      
+      font-size: 13px;
+      color: #151D41;
+
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #151D41;
+      border-radius: 5px;
+
+      margin-bottom: 58px;
+      padding: 20px 18px;
+      resize: none;
+    }
+
+    button {
+      width: 213px;
+      height: 57px;
+
+      font-size: 18px;
+      color: #FFFFFF;
+
+      border: none;
+      border-radius: 5px;
+      background: #F97270 0% 0% no-repeat padding-box;
+
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  .contactDots {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 147px;
+    height: 346px;
+    background: transparent url('../../assets/back1.png') 0% 0% no-repeat padding-box;
+    color: transparent;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .contactSection {
+    .boxSubTitle {
+      > .boxShadow {
+        width: 0;
+      }
+    }
+  }
+}
